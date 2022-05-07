@@ -9,15 +9,20 @@ const tarefas = [
   },
   { titulo: 'lavar loça', concluida: true },
 ];
-const concluida = { concluida } == true;
-{
-return concluida;
-console.log(concluida);}
 
-const concluida = (({concluida}) == false)
-return concluida;
-console.log(concluida);
+const buscarTarefasConcluidas = () => {
+  const tarefasConcluidas = tarefas.filter(tarefas);
+  const concluida = tarefa.concluida;
+  return concluida === true;
 
+  return tarefasConcluidas;
+};
+console.log(buscarTarefasConcluidas);
 
-
-
+const buscarTarefasNaoConcluidas = () =>
+tarefas.filter(({concluida}) => {const  concluida = tarefa.concluida;});
+return concluida ===false;
+});
+return tarefasConcluidas.lenght;
+};
+ 

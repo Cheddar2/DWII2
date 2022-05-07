@@ -1,0 +1,3 @@
+const minhafucao = (nome, idade) => {
+
+}
