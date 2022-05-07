@@ -1,14 +1,16 @@
 const tarefas = [
   {
-    titulo: 'passear com o catiorro',
-    concluida: false,
-  },
-  {
-    titulo: 'comprar couve',
-    concluida: false,
-  },
-  { titulo: 'lavar loça', concluida: true },
-];
+  titulo: 'passear com o catiorro',
+  concluida: false,
+  dias: 10,
+},
+{
+  titulo: 'comprar couve',
+  concluida: false,
+  dias: 5,
+},
+{ titulo: 'lavar loça', concluida: true, dias:60, },
+],
 
 const buscarTarefasConcluidas = () => {
   const tarefasConcluidas = tarefas.filter(tarefas);
@@ -25,4 +27,7 @@ return concluida ===false;
 });
 return tarefasConcluidas.lenght;
 };
- 
+
+
+const Buscartarefaconcluidaabaixode30dias = () => tarefas.filter(({  concluida = }) const concluida)
+
