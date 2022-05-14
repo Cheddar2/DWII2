@@ -68,6 +68,6 @@ const novomedicos = medicos.map((medico) =>{
   if (medico.genero === 'feminino') {
     return 'dra.' +  medico.nome + ' ' +  medico.sobrenome;
   }
-
+return  'dr.' +  medico.nome + ' ' +  medico.sobrenome;
   
 });
