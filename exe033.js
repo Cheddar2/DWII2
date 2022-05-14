@@ -56,17 +56,18 @@ for(let medico of medicos) {
 
 const novomedicos = medicos.map((medico) =>{
 
-  let cordial;
+  
 
   if (medico.genero === 'nao-binario') {
-    const cordial = 'dre.' +  medico.nome + ' ' +  medico.sobrenome;
+    return  'dre.' +  medico.nome + ' ' +  medico.sobrenome;
+    
   }
   if (medico.genero === 'masculino') {
-    const cordial = 'dr.' +  medico.nome + ' ' +  medico.sobrenome;
+    return 'dr.' +  medico.nome + ' ' +  medico.sobrenome;
   }
   if (medico.genero === 'feminino') {
-    const cordial = 'dra.' +  medico.nome + ' ' +  medico.sobrenome;
+    return 'dra.' +  medico.nome + ' ' +  medico.sobrenome;
   }
 
-  return cordial;
+  
 });
