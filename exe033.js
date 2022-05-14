@@ -19,19 +19,54 @@ const medicos = [
 
 ]
 
-const Exec = medicos.map((genero) => {
-  if(genero === 'nao binario') {
-    var re = 'dre' + nome + sobrenome
-    return { var }
-    
-  }
-  if(genero === 'masculino'){
-    var re = 'dr' + nome + sobrenome
+//const Exec = medicos.map((genero) => {
+  //if(genero === 'nao binario') {
+   // var re = 'dre' + nome + sobrenome
+  //  return { re };
+ //   
+  //}
+  //if(genero === 'masculino'){
+  //  var re = 'dr' + nome + sobrenome
+ //   return {re};
+ // }
+//  if(genero === 'feminino'){
+ //   var re = 'dra' + nome + sobrenome
+ //   return {re};
+ // }
+//}
+//)
+//console.log(Exec)
 
+let arrayDrs = [];
+for(let medico of medicos) {
+  if (medico.genero === 'nao-binario') {
+    const cordial = 'dre.' +  medico.nome + ' ' +  medico.sobrenome;
+    arrayDrs.push(cordial);
   }
-  if(genero === 'feminino'){
-    var re = 'dra' + nome + sobrenome
+  if (medico.genero === 'masculino') {
+    const cordial = 'dr.' +  medico.nome + ' ' +  medico.sobrenome;
+    arrayDrs.push(cordial);
+  }
+  if (medico.genero === 'feminino') {
+    const cordial = 'dra.' +  medico.nome + ' ' +  medico.sobrenome;
+    arrayDrs.push(cordial);
   }
 }
-)
-console.log(Exec)
+//console.log(arrayDrs);
+
+const novomedicos = medicos.map((medico) =>{
+
+  let cordial;
+
+  if (medico.genero === 'nao-binario') {
+    const cordial = 'dre.' +  medico.nome + ' ' +  medico.sobrenome;
+  }
+  if (medico.genero === 'masculino') {
+    const cordial = 'dr.' +  medico.nome + ' ' +  medico.sobrenome;
+  }
+  if (medico.genero === 'feminino') {
+    const cordial = 'dra.' +  medico.nome + ' ' +  medico.sobrenome;
+  }
+
+  return cordial;
+});
