@@ -27,6 +27,7 @@ const filmes = [
 const nomelancamento = filmes.map(({titulo, ano})  => ({
   titulo,
   ano,
+  id: index +1,
 
   
 }));
